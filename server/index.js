@@ -4,4 +4,11 @@ const { dialogflow } = require('actions-on-google');
 
 const app = dialogflow({ debug: true });
 
-express().use(bodyParser.json(), app).listen(3000);
+
+
+const server = express();
+server.use(bodyParser.json(), app);
+server.get('/', () => {
+  console.log('Hit the / endpoint');
+});
+server.listen(3000);
