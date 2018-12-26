@@ -4,7 +4,8 @@
   "description": "Meal Assistant",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,8 @@
   },
   "homepage": "https://github.com/asownder95/mealAssistant2#readme",
   "dependencies": {
+    "actions-on-google": "^2.5.0",
+    "body-parser": "^1.18.3",
     "express": "^4.16.4"
   },
   "devDependencies": {
