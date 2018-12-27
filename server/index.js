@@ -14,6 +14,7 @@ assistant.catch((conv, err) => {
 });
 
 const server = express();
+const port = process.env.PORT || 3000;
 server.use(cors());
 server.use(bodyParser.json());
 // server.get('/test', (req, res) => {
@@ -28,7 +29,7 @@ server.use('/', (req, res) => {
 server.use(assistant);
 
 if (require.main === module) {
-  server.listen(3000, () => console.log('Webhook fulfillment server listening!'));
+  server.listen(port, () => console.log(`Webhook fulfillment server listening on port ${port}`));
 }
 
 module.exports = server;
