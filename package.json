@@ -22,7 +22,8 @@
     "actions-on-google": "^2.5.0",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "request-promise": "^4.2.2"
   },
   "devDependencies": {
     "eslint": "^5.11.0",
