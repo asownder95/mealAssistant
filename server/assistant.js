@@ -1,9 +1,10 @@
 const { dialogflow } = require('actions-on-google');
 
 const assistant = dialogflow({ debug: true });
-const { askNamePermission } = require('../fulfillment/handlers.js');
+const { askNamePermission, askInitialIntent } = require('../fulfillment/handlers.js');
 
 assistant.intent('Default Welcome Intent', askNamePermission);
+assistant.intent('actions_intent_PERMISSION', askInitialIntent);
 
 assistant.catch((conv, err) => {
   console.error(err);
