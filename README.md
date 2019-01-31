@@ -1,2 +1,2 @@
 # mealAssistant2
-Meal Assistant
+Meal preparing chat assistant built with Dialogflow.
